@@ -9,4 +9,5 @@
   'welcome':
     'showOnStartup': false
   'editor':
+    'showInvisibles': true
     'invisibles': {}
