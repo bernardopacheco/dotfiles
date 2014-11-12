@@ -3,6 +3,10 @@
     'disabledPackages': [
       'metrics'
     ]
+    'themes': [
+      'atom-dark-ui'
+      'monokai'
+    ]
   'metrics': false
   'exception-reporting':
     'userId': 'c6b9b6c6-626e-00a4-d596-880399b0319c'

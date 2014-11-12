@@ -1,2 +1,4 @@
 .atom/packages
 .atom/.gitignore
+.atom/.node-gyp
+.atom/compile-cache
