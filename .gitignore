@@ -2,5 +2,6 @@
 .atom/.gitignore
 .atom/.node-gyp
 .atom/compile-cache
+.atom/nohup.out
 .vagrant
 *~
