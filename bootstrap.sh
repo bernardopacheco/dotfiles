@@ -10,7 +10,7 @@ function ensure_link {
 
 # Atom editor
 echo
-ensure_link "~/src/dotfiles/.atom" "~/.atom"
+ensure_link "src/dotfiles/.atom" ".atom"
 echo "atom editor: symlink created"
 echo
 
