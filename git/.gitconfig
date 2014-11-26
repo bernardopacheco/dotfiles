@@ -1,0 +1,28 @@
+[user]
+	name = Bernardo Pacheco
+	email = bernardo.wpacheco@gmail.com
+
+[core]
+	excludesfile = /home/bernardo/.gitignore
+
+[alias]
+	br = branch
+
+	ci = commit
+	cm = commit -m
+
+	co = checkout
+
+	df = diff
+	ds = diff --staged
+
+	st = status
+
+	l   = log -18 --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
+    	ll  = log     --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
+	gl  = log -12 --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(by %an)%Creset%C(yellow bold)%d%Creset%n'
+	gll = log     --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(%cr by %an)%Creset%C(yellow bold)%d%Creset%n'
+
+[merge]
+	tool = kdiff3
+
