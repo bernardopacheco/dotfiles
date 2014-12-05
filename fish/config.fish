@@ -12,7 +12,7 @@ set -g -x TERM xterm-256color
 
 # Functions
 function serve_this; python -m SimpleHTTPServer; end
-function l; ls -Flah; end
+function l; ls -Flah $argv; end
 
 function ef; gedit ~/.config/fish/config.fish; end
 function eg; gedit ~/.gitconfig; end
