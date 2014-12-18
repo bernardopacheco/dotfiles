@@ -1,9 +1,0 @@
-angularjs
-atom-color-highlight
-autocomplete-plus
-autocomplete-snippets
-autocomplete-paths
-emmet
-javascript-snippets
-highlight-line
-monokai
