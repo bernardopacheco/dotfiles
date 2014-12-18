@@ -5,20 +5,15 @@
 set -e
 
 function ensure_link {
-    test -L "$HOME/$2" || ln -s "$HOME/$1" "$HOME/$2"
+    test -e "$HOME/$2" && rm -rf "$HOME/$2"
+    ln -s "$HOME/$1" "$HOME/$2"
 }
 
-echo
+mkdir -p ~/local/bin
+cp bin/* ~/local/bin
+chmod u+rwx,go+r-wx ~/local/bin/*
 
-# Atom editor
-echo ATOM EDITOR
-echo
-echo "configuring symlink..."
-ensure_link "src/dotfiles/.atom" ".atom"
-echo "done"
-echo
-
-echo "installing packages..."
-apm install --packages-file .atom/packages.txt
-echo "done"
-echo
+ensure_link "src/dotfiles/vim/.vimrc" ".vimrc"
+ensure_link "src/dotfiles/fish/config.fish" ".config/fish/config.fish"
+ensure_link "src/dotfiles/git/.gitconfig" ".gitconfig"
+ensure_link "src/dotfiles/git/.gitignore" ".gitignore"
