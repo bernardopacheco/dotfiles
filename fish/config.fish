@@ -2,26 +2,25 @@
 set -g -x PATH $PATH $HOME/bin
 set -g -x PATH $PATH $HOME/local/bin
 set -g -x PATH $PATH $HOME/.local/bin
-set -g -x PATH $HOME/.rbenv/bin $PATH
-. (rbenv init -|psub)
 
 # Other variables
 set -g -x fish_greeting ''
-set -g -x EDITOR gedit
+set -g -x EDITOR vim
 set -g -x TERM xterm-256color
 
 # Functions
-function serve_this; python -m SimpleHTTPServer; end
-function l; ls -Flah $argv; end
-
-function ef; gedit ~/.config/fish/config.fish; end
-function eg; gedit ~/.gitconfig; end
-function eh; gedit ~/.hgrc; end
+function ef; vim ~/.config/fish/config.fish; end
+function ev; vim ~/.vimrc; end
+function eg; vim ~/.gitconfig; end
+function eh; vim ~/.hgrc; end
 
 function ..;    cd ..; end
 function ...;   cd ../..; end
 function ....;  cd ../../..; end
 function .....; cd ../../../..; end
+
+function l; ls -Flah $argv; end
+function serve_this; python -m SimpleHTTPServer; end
 
 # Opens the file with your preferred program
 function o; gvfs-open $argv; end
