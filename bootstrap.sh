@@ -11,7 +11,7 @@ function ensure_link {
 
 mkdir -p ~/local/bin
 cp bin/* ~/local/bin
-chmod u+rwx,go+r-wx ~/local/bin/*
+chmod 744 ~/local/bin/*
 
 ensure_link "src/dotfiles/vim/.vimrc" ".vimrc"
 ensure_link "src/dotfiles/fish/config.fish" ".config/fish/config.fish"
