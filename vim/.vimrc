@@ -7,8 +7,9 @@
 " Configure pathogen.
 " More: https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
+
+filetype plugin indent on " Enable detection, plugins and indenting in one step
 syntax on
-filetype plugin indent on
 
 " No vi compatible.
 set nocompatible
@@ -125,3 +126,21 @@ vnoremap <F1> <ESC>
 
 " Quicker escaping.
 inoremap jj <ESC>
+
+" Color scheme
+if has("gui_running")
+    set background=dark
+    let g:badwolf_tabline = 2
+    let g:badwolf_html_link_underline = 0
+    colorscheme badwolf
+
+    " Remove toolbar, left scrollbar and right scrollbar
+    set guioptions-=T
+    set guioptions-=l
+    set guioptions-=L
+    set guioptions-=r
+    set guioptions-=R
+else
+    set bg=dark
+    colorscheme jellybeans
+endif
