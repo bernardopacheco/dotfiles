@@ -127,6 +127,8 @@ vnoremap <F1> <ESC>
 " Quicker escaping.
 inoremap jj <ESC>
 
+set guifont=Monaco\ Regular\ 11 " Change font
+
 " Color scheme
 if has("gui_running")
     set background=dark
