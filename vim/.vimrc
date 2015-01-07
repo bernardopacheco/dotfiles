@@ -146,3 +146,7 @@ else
     set bg=dark
     colorscheme jellybeans
 endif
+
+" Configure ctrlp
+" More: https://github.com/kien/ctrlp.vim
+set wildignore+=*/node_modules/*,*bower_components/*

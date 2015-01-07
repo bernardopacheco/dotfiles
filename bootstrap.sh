@@ -30,3 +30,4 @@ test -e ~/.vim/autoload/pathogen.vim || curl -LSso ~/.vim/autoload/pathogen.vim 
 # Install vim plugins
 install_pathogen_plugin "git@github.com:sjl/badwolf.git" "badwolf"
 install_pathogen_plugin "git@github.com:nanotech/jellybeans.vim.git" "jellybeans"
+install_pathogen_plugin "https://github.com/kien/ctrlp.vim.git" "ctrlp"
