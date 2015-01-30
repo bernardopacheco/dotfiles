@@ -14,6 +14,9 @@ syntax on
 " No vi compatible.
 set nocompatible
 
+" Custom mapleader
+let mapleader = ","
+
 " Prevent some security exploits.
 " More: http://lists.alioth.debian.org/pipermail/pkg-vim-maintainers/2007-June/004020.html
 set modelines=0
@@ -118,6 +121,17 @@ vnoremap j gj
 vnoremap k gk
 vnoremap 0 g^
 vnoremap $ g$
+
+" Split panels
+noremap <leader>s <C-W>s
+noremap <leader>v <C-w>v
+noremap <leader>t :tabnew<cr>
+
+" Navigation among panels
+noremap <C-h> <C-W>h
+noremap <C-j> <C-W>j
+noremap <C-k> <C-W>k
+noremap <C-l> <C-W>l
 
 " Disable help key.
 inoremap <F1> <ESC>
