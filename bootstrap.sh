@@ -16,8 +16,12 @@ mkdir -p ~/local/bin
 cp bin/* ~/local/bin
 chmod 744 ~/local/bin/*
 
+# Create the vim file type plugin folder
+mkdir -p ~/.vim/ftplugin
+
 # Create symlinks
 ensure_link "src/dotfiles/vim/.vimrc" ".vimrc"
+ensure_link "src/dotfiles/vim/ftplugin/javascript.vim" ".vim/ftplugin/javascript.vim"
 ensure_link "src/dotfiles/fish/config.fish" ".config/fish/config.fish"
 ensure_link "src/dotfiles/git/.gitconfig" ".gitconfig"
 ensure_link "src/dotfiles/git/.gitignore" ".gitignore"
