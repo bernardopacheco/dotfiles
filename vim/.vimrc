@@ -14,8 +14,12 @@ syntax on
 " No vi compatible.
 set nocompatible
 
-" Custom mapleader
+" Change the mapleader from \ to ,
 let mapleader = ","
+let maplocalleader="\\"
+
+" Strips off two full keystrokes from almost every Vim command
+nnoremap ; :
 
 " Prevent some security exploits.
 " More: http://lists.alioth.debian.org/pipermail/pkg-vim-maintainers/2007-June/004020.html
@@ -43,6 +47,19 @@ set showmode
 
 " Show (partial) command in the last line of the screen.
 set showcmd
+
+" set show matching parenthesis
+set showmatch
+
+" Search
+set ignorecase    " ignore case when searching
+set smartcase     " ignore case if search pattern is all lowercase,
+                        " case-sensitive otherwise
+set smarttab      " insert tabs on the start of a line according to
+                        " shiftwidth, not tabstop
+set hlsearch      " highlight search terms
+set incsearch     " show search matches as you type
+
 
 " It hides buffers instead of closing them. This means that you can have
 " unwritten changes to a file and open a new file using :e, without being forced
