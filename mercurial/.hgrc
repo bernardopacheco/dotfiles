@@ -1,0 +1,56 @@
+[ui]
+username = Bernardo Pacheco <bernardo.wpacheco@gmail.com>
+editor = vim
+ignore = ~/.hgignore
+ssh = ssh -C
+
+[extensions]
+color =
+convert =
+graphlog =
+pager =
+mq =
+transplant =
+purge =
+record =
+rebase =
+progress =
+extdiff =
+hggit =
+prompt = ~/lib/hg-prompt/prompt.py
+
+[bookmarks]
+track.current = True
+
+[diff]
+git = True
+
+[pager]
+pager = less -FXRi
+attend = annotate, cat, diff, qdiff, export, glog, log, sglog, slog, nlog, help, l, follow
+
+[merge-tools]
+splice.executable = gvim
+splice.args = -f $base $local $other $output -c 'SpliceInit'
+splice.premerge = keep
+splice.priority = 1
+
+[extdiff]
+cmd.meld =
+
+[alias]
+# Log
+slog = log --style ~/lib/mercurial-cli-templates/map-cmdline.slog
+nlog = log --style ~/lib/mercurial-cli-templates/map-cmdline.nlog
+sglog = glog --style ~/lib/mercurial-cli-templates/map-cmdline.sglog
+follow = log --follow
+l = sglog
+
+# Merge
+mergeinternal = !$HG --config ui.merge=internal:merge merge $@
+
+# Pull
+p = pull
+pr = pull --rebase
+
+%include ~/.hgrc_local

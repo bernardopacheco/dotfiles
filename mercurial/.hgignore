@@ -1,0 +1,8 @@
+syntax: glob
+*.settings/org.eclipse.jdt.core.prefs
+*.trash
+.metadata*
+*.orig
+.bak*
+tags
+Session.vim

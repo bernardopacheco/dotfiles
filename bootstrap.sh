@@ -25,6 +25,8 @@ ensure_link "src/dotfiles/vim/ftplugin/javascript.vim" ".vim/ftplugin/javascript
 ensure_link "src/dotfiles/fish/config.fish" ".config/fish/config.fish"
 ensure_link "src/dotfiles/git/.gitconfig" ".gitconfig"
 ensure_link "src/dotfiles/git/.gitignore" ".gitignore"
+ensure_link "src/dotfiles/mercurial/.hgrc" ".hgrc"
+ensure_link "src/dotfiles/mercurial/.hgignore" ".hgignore"
 
 # Install vim pathogen
 # https://github.com/tpope/vim-pathogen
