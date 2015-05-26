@@ -16,7 +16,6 @@ record =
 rebase =
 progress =
 extdiff =
-hggit =
 prompt = ~/lib/hg-prompt/prompt.py
 
 [bookmarks]
