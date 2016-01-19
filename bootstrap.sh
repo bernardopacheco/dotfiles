@@ -34,8 +34,8 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle
 test -e ~/.vim/autoload/pathogen.vim || curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 # Install vim plugins
-install_pathogen_plugin "git@github.com:sjl/badwolf.git" "badwolf"
-install_pathogen_plugin "git@github.com:nanotech/jellybeans.vim.git" "jellybeans"
+install_pathogen_plugin "https://github.com/sjl/badwolf.git" "badwolf"
+install_pathogen_plugin "https://github.com/nanotech/jellybeans.vim.git" "jellybeans"
 install_pathogen_plugin "https://github.com/kien/ctrlp.vim.git" "ctrlp"
-install_pathogen_plugin "git@github.com:groenewege/vim-less.git" "vim-less"
-install_pathogen_plugin "git@github.com:bling/vim-airline.git" "vim-airline"
+install_pathogen_plugin "https://github.com/groenewege/vim-less.git" "vim-less"
+install_pathogen_plugin "https://github.com/vim-airline/vim-airline.git" "vim-airline"
