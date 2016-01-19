@@ -16,6 +16,11 @@ mkdir -p ~/local/bin
 cp bin/* ~/local/bin
 chmod 744 ~/local/bin/*
 
+# Mercurial prompt
+mkdir -p ~/lib/hg-prompt
+cp mercurial/prompt.py ~/lib/hg-prompt
+chmod 744 ~/lib/hg-prompt/prompt.py
+
 # Create the vim file type plugin folder
 mkdir -p ~/.vim/ftplugin
 
