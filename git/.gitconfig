@@ -19,6 +19,8 @@
 
 	st = status
 
+        tg = tag --sort=-taggerdate
+
 	discard = checkout --
 	dis = checkout --
 
