@@ -8,8 +8,8 @@ Dotfiles repository.
 * Install Oh My Zsh
 * Install iTerm2
 * Install iTerm2 plugins
-  * zsh-syntax-highlighting
-  * zsh-autosuggestions
+  * `zsh-syntax-highlighting`
+  * `zsh-autosuggestions`
 * Install nvm
 * Add custom alias to `~/.zshrc`
 * Add `.gitignore` to `~`
