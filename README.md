@@ -13,6 +13,7 @@ Dotfiles repository.
 * Install nvm
 * Add custom alias to `~/.zshrc`
 * Add `.gitignore` to `~`
+* Add `.gitconfig` to `~`
 
 
 ## License
