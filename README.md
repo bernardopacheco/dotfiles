@@ -1,6 +1,19 @@
 # Dotfiles
 
-These are my dotfiles.
+Dotfiles repository.
+
+## New installation steps
+
+* Install Homebrew
+* Install Oh My Zsh
+* Install iTerm2
+* Install iTerm2 plugins
+  * zsh-syntax-highlighting
+  * zsh-autosuggestions
+* Install nvm
+* Add custom alias to `~/.zshrc`
+* Add `.gitignore` to `~`
+
 
 ## License
 
