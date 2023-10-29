@@ -12,6 +12,8 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"¬
+
 alias l="ls -Flah $argv"
 alias o="code $argv"
 alias serve_this="python -m SimpleHTTPServer"

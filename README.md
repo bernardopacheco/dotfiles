@@ -4,17 +4,26 @@ Dotfiles repository.
 
 ## New installation steps
 
+* Install Visual Studio Code
 * Install Homebrew
-* Install Oh My Zsh
 * Install iTerm2
+* Install Oh My Zsh
 * Install iTerm2 plugins
   * `zsh-syntax-highlighting`
   * `zsh-autosuggestions`
+* Install iTerm2 color scheme and apply it to iTerm2 profile
+  * `iterm2-snazzy`
+* Install iTerm2 font and apply it to the iTerm2 profile
+  * `firacode nerd font`
+* Install iTerm2 prompt and apply it to `~/.zshrc`
+  * `Starship`
+* Add Fira font to Visual Studio Code terminal
+  * Open settings and search by `terminal.integrated.fontFamily`
+  * Add `FiraMono Nerd Font Mono`
 * Install nvm
 * Add custom alias to `~/.zshrc`
 * Add `.gitignore` to `~`
 * Add `.gitconfig` to `~`
-
 
 ## License
 
