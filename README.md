@@ -21,6 +21,7 @@ Dotfiles repository.
   * Open settings and search by `terminal.integrated.fontFamily`
   * Add `FiraMono Nerd Font Mono`
 * Install nvm
+* Install tree `brew install tree`
 * Add custom alias to `~/.zshrc`
 * Add `.gitignore` to `~`
 * Add `.gitconfig` to `~`
